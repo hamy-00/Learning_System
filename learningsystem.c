@@ -11,13 +11,8 @@ void fac();
 void funop();
 void alph();
 void four();
-
 void logic();
 void counter();
-
-
-
-
 
 void counter();
 
@@ -30,14 +25,13 @@ void main()
     scanf("%s",&name);
     printf("\nEnter your Registration number: ");
     scanf("%d",&reg);
-
-  FILE *fptr;
+    FILE *fptr;
     fptr = fopen("learning ssystdem file.txt", "w");
-
-   fprintf(fptr,"student name: %s",name);
+    fprintf(fptr,"student name: %s",name);
 
    fprintf(fptr,"\n\n");
    fprintf(fptr,"registration number: %d",reg);
+    
 fprintf(fptr,"\n\n");
 fclose(fptr);
 system ("cls");
@@ -76,15 +70,9 @@ switch(choice){
     case 6: four();break;
     case 7: logic();break;
     case 8: counter();break;
-
-
-
-
-
 }
 start();
 }
-
 
 void multi(){system ("cls");
 printf("\n         Teaching the multiplication table \n\n");
@@ -92,9 +80,7 @@ int i,j;
 for(i=1;i<=10;i++){
     for(j=1;j<=10;j++){
         printf("%d x %d = %d\n\n",i,j,i*j);
-
     }
-
 }printf("\n");
 int mi;
 int mm;
@@ -115,7 +101,6 @@ system ("cls");
     scanf("%sf",&bye);
     if (strcmp(bye, "exit") == 0)
 {
-
     printf("\n\n\n");
 printf("                  #****************************************************#\n");
 printf("                  #                                                    #\n");
@@ -131,30 +116,19 @@ else
 {
     start();
 }
-
-
 }
 void div(){system ("cls");
     printf("         Division\n\n");
-
 float a,b;
-
 float division;
-
 division = 0;
-
-
 
 printf("Enter two numbers:\n");
 scanf("%f",&a);
 scanf("%f",&b);
-
-
 division = DIVIDE(a, b);
 
-
 printf("Division = %.2f\n",division);
-
 getch();
 
 
@@ -219,12 +193,7 @@ break;
        case 6:printf("Enter an integer: ");
        scanf("%d", &n);
        printf("tan of %d = %d\n",n,tan(n));
-
        }
-
-
-
-
 }
 
 void alph(){system ("cls");
@@ -237,31 +206,16 @@ char c,s;
         for (c = 'a'; c <= 'z'; ++c){
         printf("%c ", c);
 
-
 }
 printf("\n\n");
-/*
-
-
-
-test
-
-
-
-
-*/
-
 }
 void four(){
 system ("cls");
-
 printf("denary = ");
   int chh,wew,con;
-
    for( chh = 0 ; chh <= 10; chh++ ) {
       printf("%d  ", chh );
    }
-
 printf("\n binary = 0 1 10 11 100 101 110 111 1000 1001 1010");
 printf("\n octal = 000 001 002 003 004 005 006 007 010");
 printf("\n hexadicimal = 0 1 2 3 4 5 6 7 8 A B C D\n\n\n");
@@ -270,30 +224,16 @@ int a[10],v,i;
 
 printf("Enter the number to convert to ocatal : ");
 scanf("%d", &nn);
-
-
-
-
-
-
+    
     while (nn != 0)
-
     {
-
         remainder = nn % 10;
-
         octalnum = octalnum + remainder * j;
-
         j = j * 2;
-
         nn = nn / 10;
-
     }
-
     printf("octal is= %lo \n", octalnum);
-
-
-
+    
 int n,ii;
 
 printf("Enter the number to convert to binary: ");
@@ -326,7 +266,6 @@ scanf("%f",&q);
 scanf("%f",&w);
 if(q==w){
     printf("true\n\n");break;}
-
     else{
 printf("false\n\n");
 break;
@@ -334,7 +273,6 @@ break;
 case 2:printf("Enter two numbers:\n");
 scanf("%f",&q);
 scanf("%f",&w);
-
 if(w&&1!=0){
     printf("true\n\n");break;}
     else{
@@ -347,8 +285,6 @@ if(q==0){
     printf("true\n\n");
     break;}
     else {printf("flase\n\n");break;}
-
-
 }
 }
 void counter(){
